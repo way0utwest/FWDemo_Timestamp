@@ -1,0 +1,1 @@
+alter table dbo.Steve add mychar char(1)

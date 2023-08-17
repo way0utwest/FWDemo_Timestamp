@@ -1,0 +1,12 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE   PROCEDURE [dbo].[GetRandomOrder]
+AS
+BEGIN
+  DECLARE @o INT;
+  SELECT TOP 1 @o = o.orderid FROM dbo.OrderHeader AS o ORDER BY NEWID ();
+  EXEC dbo.GetOrder @o;
+END;
+GO

@@ -1,0 +1,1 @@
+create table dbo.Steve (myid int)
