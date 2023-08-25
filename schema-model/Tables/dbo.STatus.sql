@@ -1,7 +1,8 @@
 CREATE TABLE [dbo].[STatus]
 (
 [StatusID] [int] NOT NULL IDENTITY(1, 1),
-[StatusValue] [varchar] (20) NULL
+[StatusValue] [varchar] (20) NULL,
+[Active] [bit] NULL
 )
 GO
 ALTER TABLE [dbo].[STatus] ADD CONSTRAINT [StatusPK] PRIMARY KEY CLUSTERED ([StatusID])
