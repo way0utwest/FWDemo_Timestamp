@@ -8,5 +8,5 @@ CREATE TABLE [dbo].[Customer]
 [Status] [tinyint] NULL
 )
 GO
-CREATE NONCLUSTERED INDEX [nci_customer_custname] ON [dbo].[Customer] ([CustomerName], [Status])
+CREATE NONCLUSTERED INDEX [nci_customer_custname] ON [dbo].[Customer] ([CustomerName], [Status]) WITH (FILLFACTOR=80, PAD_INDEX=ON, STATISTICS_NORECOMPUTE=ON)
 GO
