@@ -8,3 +8,5 @@ CREATE TABLE [dbo].[Customer]
 [Status] [tinyint] NULL
 )
 GO
+CREATE NONCLUSTERED INDEX [nci_customer_custname] ON [dbo].[Customer] ([CustomerName], [Status])
+GO
