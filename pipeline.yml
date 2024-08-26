@@ -38,7 +38,7 @@ parameters:
       
       stage: 'Build'
       displayName: 'Build'
-      variableGroupName: 'build_credentials_variable_group' #contains userName, password, JDBC, databaseName
+      variableGroupName: 'SimpleTalkDB_variables' #contains userName, password, JDBC, databaseName
 
   # This is the extensible definition of your target environments. 
   # Every parameter in deploymentStages corresponds to an environment - here it's Test and Prod.
