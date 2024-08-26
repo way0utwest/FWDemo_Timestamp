@@ -1,4 +1,4 @@
-name: docker-ADO-hosted-pipeline
+name: SimpleTalkDB-SelfHosted-Pipeline
 
 trigger:
   branches:
