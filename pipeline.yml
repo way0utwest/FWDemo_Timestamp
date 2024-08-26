@@ -1,0 +1,172 @@
+name: docker-ADO-hosted-pipeline
+
+trigger:
+  branches:
+    include:
+      - master
+  paths:
+    include:
+      - migrations/*
+
+pool:
+  vmImage: $(AGENT_POOL)
+
+variables:
+  RELEASE_PREVIEW: 'Release-Preview.sql'
+  BUILD_NAME: 'Build'
+  REPORTS: 'Reports.html'
+  REPORTS_DISPLAY_NAME: 'Reports'
+  
+  FLYWAY_MIGRATIONS_PATH: $(Build.Repository.LocalPath)/migrations
+  FLYWAY_CONFIG_FILES: $(Build.Repository.LocalPath)
+  FLYWAY: 'docker run --rm -v "$(FLYWAY_MIGRATIONS_PATH)":/flyway/migrations -v "$(FLYWAY_CONFIG_FILES)":/flyway/conf -v "$(System.ArtifactsDirectory)":/flyway/reports $(FLYWAY_DOCKER_IMAGE) flyway "-plugins.clean.mode=default" "-schemas=$(schemas)" -user="$(userName)" -password="$(password)" -licenseKey=$(FLYWAY_LICENSE_KEY)'
+  
+  # Contains FLYWAY_LICENSE_KEY, BASELINE_VERSION, FIRST_UNDO_SCRIPT, FLYWAY_DOCKER_IMAGE, AGENT_POOL
+  # Make BASELINE_VERSION match the baseline version in your project
+  # Make FIRST_UNDO_SCRIPT match the first undo version in your project
+  # FLYWAY_DOCKER_IMAGE is currently at: redgate/flyway:latest-azure
+  # AGENT_POOL here is ubuntu-latest
+  # SCHEMAS comma separated list
+  # Look for images at https://hub.docker.com/r/redgate/flyway
+  group: flyway_vars
+
+parameters:
+  # IMPORTANT: DO NOT ADD DEPLOYMENT STEPS TO THE BUILD STAGE - THE BUILD IS A DESTRUCTIVE ACTION
+  - name: buildStage
+    type: object
+    default: 
+      
+      stage: 'Build'
+      displayName: 'Build'
+      variableGroupName: 'build_credentials_variable_group' #contains userName, password, JDBC, databaseName
+
+  # This is the extensible definition of your target environments. 
+  # Every parameter in deploymentStages corresponds to an environment - here it's Test and Prod.
+  # Pay attention to the 'dependsOn' field - this determines order of operations.
+  - name: deploymentStages
+    type: object
+    default: 
+
+    - stage: 'Test'
+      dependsOn: 'Build'
+      displayName: 'Deploy Test'
+      pauseForCodeReview: false
+      variableGroupName: 'test_credentials_variable_group' #contains userName, password, JDBC, databaseName, check_JDBC
+        # IMPORTANT: check_JDBC will get destroyed
+
+    - stage: 'Prod'
+      dependsOn: 'Test'
+      displayName: 'Deploy Prod'
+      pauseForCodeReview: true
+      variableGroupName: 'prod_credentials_variable_group' #contains userName, password, JDBC, databaseName, check_JDBC
+        # IMPORTANT: check_JDBC will get destroyed
+
+stages:
+  - stage: ${{parameters.buildStage.stage}}
+    displayName: ${{parameters.buildStage.displayName}} 
+    jobs:
+    - job: ${{parameters.buildStage.stage}}
+      variables:
+      - group: ${{ parameters.buildStage.variableGroupName }}
+      - group: flyway_vars
+      steps:
+
+        # - script: |
+        #     $(FLYWAY) info clean info -url='$(JDBC)' -cleanDisabled='false'
+        #   failOnStderr: false
+        #   displayName: 'Clean Build DB'
+
+        - script: |
+            $(FLYWAY) info migrate info -url='$(JDBC)' -cleanDisabled='true'
+          failOnStderr: false
+          displayName: 'Migrate Build DB'
+
+        - script: |
+            $(FLYWAY) info undo info -url='$(JDBC)' -target='$(FIRST_UNDO_SCRIPT)'? -cleanDisabled='true'
+          failOnStderr: false
+          displayName: 'Undo Build DB'
+        
+        - task: CopyFiles@2
+          inputs:
+            targetFolder: '$(System.ArtifactsDirectory)' 
+
+        - task: PublishBuildArtifacts@1
+          displayName: 'Publish Build Artifact'
+          inputs:
+            ArtifactName: '$(BUILD_NAME)'
+            PathtoPublish: '$(System.ArtifactsDirectory)'
+  
+  - ${{each stage in parameters.deploymentStages}}:
+    
+    - stage: ${{stage.stage}} 
+      displayName: ${{stage.displayName}} 
+      dependsOn: ${{stage.dependsOn}} 
+      jobs:
+      - job: PreRelease
+        displayName: Configure Release
+        variables:
+        - group: ${{stage.variableGroupName}}
+        - group: flyway_vars
+        steps:
+          - task: DownloadBuildArtifacts@0
+            inputs:
+              buildType: 'current'
+              downloadType: 'single'
+              artifactName: '$(BUILD_NAME)'
+              downloadPath: '$(System.ArtifactsDirectory)'
+            
+          - script: |
+              $(FLYWAY) migrate -outOfOrder=true -dryRunOutput='reports/${{stage.stage}}-$(RELEASE_PREVIEW)' '-url=$(JDBC)' '-cleanDisabled=true' -baselineOnMigrate=true -baselineVersion='$(BASELINE_VERSION)'
+            failOnStderr: false
+            displayName: 'Pre-Release Deployment Report'
+
+          - task: PublishBuildArtifacts@1
+            displayName: 'Publish Release Preview'
+            inputs:
+              ArtifactName: 'Release-Preview'
+              PathtoPublish: '$(System.ArtifactsDirectory)/${{stage.stage}}-$(RELEASE_PREVIEW)'
+
+          - script: |
+              $(FLYWAY) check -changes -drift -code "-check.buildUrl=$(check_JDBC)" "-url=$(JDBC)" "-reportFilename=reports/$(databaseName)-$(Build.BuildId)-$(REPORTS)" -cleanDisabled='false' -baselineOnMigrate=true -baselineVersion='$(BASELINE_VERSION)'
+            continueOnError: true
+            displayName: '$(REPORTS_DISPLAY_NAME)'
+          
+          - task: PublishBuildArtifacts@1
+            displayName: 'Publish $(REPORTS_DISPLAY_NAME)'
+            continueOnError: true
+            inputs:
+              ArtifactName: '$(REPORTS_DISPLAY_NAME)'
+              PathtoPublish: '$(System.ArtifactsDirectory)/$(databaseName)-$(Build.BuildId)-$(REPORTS)'
+
+      - ${{if eq(stage.pauseForCodeReview, true)}}:
+        - job: CodeReview
+          displayName: Code Review
+          dependsOn: 'PreRelease'
+          pool: server
+          steps:
+            - task: ManualValidation@0
+              displayName: 'Review Change Report Prior To Release'
+              timeoutInMinutes: 4320 # job times out in 3 days
+              inputs:
+                notifyUsers: |
+                 'user@email.com'
+                 'foo@foo.com'
+                instructions: 'Review changes'
+      
+      - ${{if ne(stage.pauseForCodeReview, true)}}:
+        - job: CodeReview
+          displayName: Skipping Code Review
+          dependsOn: 'PreRelease'
+      
+      - job: Deploy
+        displayName: Deployment
+        dependsOn: 'CodeReview'
+        variables:
+        - group: ${{stage.variableGroupName}}
+        - group: flyway_vars
+        steps:
+
+          - script: |
+              $(FLYWAY) info migrate info -url='$(JDBC)' -outOfOrder='true' -cleanDisabled='true' -baselineOnMigrate=true -baselineVersion='$(BASELINE_VERSION)'
+            displayName: ${{stage.displayName}}
+            failOnStderr: false
