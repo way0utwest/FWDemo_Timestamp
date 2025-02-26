@@ -1,296 +1,433 @@
 {
-  "individualResults": [
-    {
-      "initialSchemaVersion": null,
-      "targetSchemaVersion": "20230413.1004",
-      "schemaName": "",
-      "migrations": [
-        {
-          "category": "Versioned",
-          "version": "20220402.1020",
-          "description": "Create WebUser Role",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220402_1020__Create_WebUser_Role.sql",
-          "executionTime": 3
-        },
-        {
-          "category": "Versioned",
-          "version": "20220402.1220",
-          "description": "Grant",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220402_1220__Grant.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20220403.1420",
-          "description": "Steve",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220403_1420__Steve.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20220405.0920",
-          "description": "Steve",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220405_0920__Steve.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20220410.1510",
-          "description": "Create Customer",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220410_1510__Create Customer.sql",
-          "executionTime": 3
-        },
-        {
-          "category": "Versioned",
-          "version": "20220410.1520",
-          "description": "create contact",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220410_1520__create contact.sql",
-          "executionTime": 5
-        },
-        {
-          "category": "Versioned",
-          "version": "20220604.0900",
-          "description": "create address",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220604_0900__create address.sql",
-          "executionTime": 4
-        },
-        {
-          "category": "Versioned",
-          "version": "20220711.1645",
-          "description": "customer add status",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220711_1645__customer add status.sql",
-          "executionTime": 3
-        },
-        {
-          "category": "Versioned",
-          "version": "20220712.1345",
-          "description": "contact fix status",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220712_1345__contact fix status.sql",
-          "executionTime": 4
-        },
-        {
-          "category": "Versioned",
-          "version": "20220712.1355",
-          "description": "Customer fix status",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220712_1355__Customer fix status.sql",
-          "executionTime": 3
-        },
-        {
-          "category": "Versioned",
-          "version": "20220712.1415",
-          "description": "Create OrderHeader",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220712_1415__Create OrderHeader.sql",
-          "executionTime": 3
-        },
-        {
-          "category": "Versioned",
-          "version": "20220922.1345",
-          "description": "OrderHeader add complete ",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220922_1345__OrderHeader add complete .sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20221012.1145",
-          "description": "OrderHeader remove broken col",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20221012_1145__OrderHeader remove broken col.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20221102.1025",
-          "description": "OrderHeader future flag",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20221102_1025__OrderHeader future flag.sql",
-          "executionTime": 1
-        },
-        {
-          "category": "Versioned",
-          "version": "20230104.0825",
-          "description": "Customer rename ID",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230104_0825__Customer rename ID.sql",
-          "executionTime": 82
-        },
-        {
-          "category": "Versioned",
-          "version": "20230105.0856",
-          "description": "OrderHeader add backorder",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230105_0856__OrderHeader add backorder.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20230107.1305",
-          "description": "OrderDetail new table",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230107_1305__OrderDetail new table.sql",
-          "executionTime": 1
-        },
-        {
-          "category": "Versioned",
-          "version": "20230110.0925",
-          "description": "OrderDetail line total",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230110_0925__OrderDetail line total.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20230111.1125",
-          "description": "OrderDetail rename price unitprice",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230111_1125__OrderDetail rename price unitprice.sql",
-          "executionTime": 3
-        },
-        {
-          "category": "Versioned",
-          "version": "20230112.1425",
-          "description": "Order Proc",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230112_1425__Order Proc.sql",
-          "executionTime": 4
-        },
-        {
-          "category": "Versioned",
-          "version": "20230114.1325",
-          "description": "Customer Procs",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230114_1325__Customer Procs.sql",
-          "executionTime": 3
-        },
-        {
-          "category": "Versioned",
-          "version": "20230210.1125",
-          "description": "New new table",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230210_1125__New new table.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20230212.1115",
-          "description": "News fix text length",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230212_1115__News fix text length.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20230213.1003",
-          "description": "Shipper new table",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230213_1003__Shipper new table.sql",
-          "executionTime": 1
-        },
-        {
-          "category": "Versioned",
-          "version": "20230214.1203",
-          "description": "Frieghtrate new table",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230214_1203__Frieghtrate new table.sql",
-          "executionTime": 1
-        },
-        {
-          "category": "Versioned",
-          "version": "20230215.1005",
-          "description": "FrieghtRate status",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230215_1005__FrieghtRate status.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20230215.1113",
-          "description": "FrieghtRate active flag",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230215_1113__FrieghtRate active flag.sql",
-          "executionTime": 1
-        },
-        {
-          "category": "Versioned",
-          "version": "20230218.1503",
-          "description": "OrderReturn new table",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230218_1503__OrderReturn new table.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20230223.1603",
-          "description": "CustomerCredit new table",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230223_1603__CustomerCredit new table.sql",
-          "executionTime": 1
-        },
-        {
-          "category": "Versioned",
-          "version": "20230413.1003",
-          "description": "OrderReturn reason length",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230413_1003__OrderReturn reason length.sql",
-          "executionTime": 2
-        },
-        {
-          "category": "Versioned",
-          "version": "20230413.1004",
-          "description": "Steve",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230413_1004__Steve.sql",
-          "executionTime": 3
-        }
-      ],
-      "migrationsExecuted": 31,
-      "success": true,
-      "flywayVersion": "9.21.1",
-      "database": "FWSimpleTalk_3_QA",
-      "warnings": [
-        "outOfOrder mode is active. Migration of schema [dbo] may not be reproducible."
-      ],
-      "timestamp": "2023-08-22T09:39:47.141975700",
-      "operation": "migrate",
-      "exception": null,
-      "licenseFailed": false
-    },
-    {
-      "initialSchemaVersion": "20230413.1004",
-      "targetSchemaVersion": "20230822.0943",
-      "schemaName": "",
-      "migrations": [
-        {
-          "category": "Versioned",
-          "version": "20230822.0943",
-          "description": "Logger New table",
-          "type": "SQL",
-          "filepath": "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230822_0943__Logger New table.sql",
-          "executionTime": 9
-        }
-      ],
-      "migrationsExecuted": 1,
-      "success": true,
-      "flywayVersion": "9.21.1",
-      "database": "FWSimpleTalk_3_QA",
-      "warnings": [
-        "outOfOrder mode is active. Migration of schema [dbo] may not be reproducible."
-      ],
-      "timestamp": "2023-08-22T09:43:29.194338800",
-      "operation": "migrate",
-      "exception": null,
-      "licenseFailed": false
-    }
-  ]
+  "individualResults" : [ {
+    "timestamp" : "2023-08-22T09:39:47.1419757",
+    "operation" : "migrate",
+    "exception" : null,
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : "20230413.1004",
+    "schemaName" : "",
+    "migrations" : [ {
+      "category" : "Versioned",
+      "version" : "20220402.1020",
+      "description" : "Create WebUser Role",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220402_1020__Create_WebUser_Role.sql",
+      "executionTime" : 3
+    }, {
+      "category" : "Versioned",
+      "version" : "20220402.1220",
+      "description" : "Grant",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220402_1220__Grant.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20220403.1420",
+      "description" : "Steve",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220403_1420__Steve.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20220405.0920",
+      "description" : "Steve",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220405_0920__Steve.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20220410.1510",
+      "description" : "Create Customer",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220410_1510__Create Customer.sql",
+      "executionTime" : 3
+    }, {
+      "category" : "Versioned",
+      "version" : "20220410.1520",
+      "description" : "create contact",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220410_1520__create contact.sql",
+      "executionTime" : 5
+    }, {
+      "category" : "Versioned",
+      "version" : "20220604.0900",
+      "description" : "create address",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220604_0900__create address.sql",
+      "executionTime" : 4
+    }, {
+      "category" : "Versioned",
+      "version" : "20220711.1645",
+      "description" : "customer add status",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220711_1645__customer add status.sql",
+      "executionTime" : 3
+    }, {
+      "category" : "Versioned",
+      "version" : "20220712.1345",
+      "description" : "contact fix status",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220712_1345__contact fix status.sql",
+      "executionTime" : 4
+    }, {
+      "category" : "Versioned",
+      "version" : "20220712.1355",
+      "description" : "Customer fix status",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220712_1355__Customer fix status.sql",
+      "executionTime" : 3
+    }, {
+      "category" : "Versioned",
+      "version" : "20220712.1415",
+      "description" : "Create OrderHeader",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220712_1415__Create OrderHeader.sql",
+      "executionTime" : 3
+    }, {
+      "category" : "Versioned",
+      "version" : "20220922.1345",
+      "description" : "OrderHeader add complete ",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20220922_1345__OrderHeader add complete .sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20221012.1145",
+      "description" : "OrderHeader remove broken col",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20221012_1145__OrderHeader remove broken col.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20221102.1025",
+      "description" : "OrderHeader future flag",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20221102_1025__OrderHeader future flag.sql",
+      "executionTime" : 1
+    }, {
+      "category" : "Versioned",
+      "version" : "20230104.0825",
+      "description" : "Customer rename ID",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230104_0825__Customer rename ID.sql",
+      "executionTime" : 82
+    }, {
+      "category" : "Versioned",
+      "version" : "20230105.0856",
+      "description" : "OrderHeader add backorder",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230105_0856__OrderHeader add backorder.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20230107.1305",
+      "description" : "OrderDetail new table",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230107_1305__OrderDetail new table.sql",
+      "executionTime" : 1
+    }, {
+      "category" : "Versioned",
+      "version" : "20230110.0925",
+      "description" : "OrderDetail line total",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230110_0925__OrderDetail line total.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20230111.1125",
+      "description" : "OrderDetail rename price unitprice",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230111_1125__OrderDetail rename price unitprice.sql",
+      "executionTime" : 3
+    }, {
+      "category" : "Versioned",
+      "version" : "20230112.1425",
+      "description" : "Order Proc",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230112_1425__Order Proc.sql",
+      "executionTime" : 4
+    }, {
+      "category" : "Versioned",
+      "version" : "20230114.1325",
+      "description" : "Customer Procs",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230114_1325__Customer Procs.sql",
+      "executionTime" : 3
+    }, {
+      "category" : "Versioned",
+      "version" : "20230210.1125",
+      "description" : "New new table",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230210_1125__New new table.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20230212.1115",
+      "description" : "News fix text length",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230212_1115__News fix text length.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20230213.1003",
+      "description" : "Shipper new table",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230213_1003__Shipper new table.sql",
+      "executionTime" : 1
+    }, {
+      "category" : "Versioned",
+      "version" : "20230214.1203",
+      "description" : "Frieghtrate new table",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230214_1203__Frieghtrate new table.sql",
+      "executionTime" : 1
+    }, {
+      "category" : "Versioned",
+      "version" : "20230215.1005",
+      "description" : "FrieghtRate status",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230215_1005__FrieghtRate status.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20230215.1113",
+      "description" : "FrieghtRate active flag",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230215_1113__FrieghtRate active flag.sql",
+      "executionTime" : 1
+    }, {
+      "category" : "Versioned",
+      "version" : "20230218.1503",
+      "description" : "OrderReturn new table",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230218_1503__OrderReturn new table.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20230223.1603",
+      "description" : "CustomerCredit new table",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230223_1603__CustomerCredit new table.sql",
+      "executionTime" : 1
+    }, {
+      "category" : "Versioned",
+      "version" : "20230413.1003",
+      "description" : "OrderReturn reason length",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230413_1003__OrderReturn reason length.sql",
+      "executionTime" : 2
+    }, {
+      "category" : "Versioned",
+      "version" : "20230413.1004",
+      "description" : "Steve",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230413_1004__Steve.sql",
+      "executionTime" : 3
+    } ],
+    "migrationsExecuted" : 31,
+    "success" : true,
+    "flywayVersion" : "9.21.1",
+    "database" : "FWSimpleTalk_3_QA",
+    "warnings" : [ "outOfOrder mode is active. Migration of schema [dbo] may not be reproducible." ],
+    "databaseType" : null,
+    "totalMigrationTime" : 153
+  }, {
+    "timestamp" : "2023-08-22T09:43:29.1943388",
+    "operation" : "migrate",
+    "exception" : null,
+    "licenseFailed" : false,
+    "initialSchemaVersion" : "20230413.1004",
+    "targetSchemaVersion" : "20230822.0943",
+    "schemaName" : "",
+    "migrations" : [ {
+      "category" : "Versioned",
+      "version" : "20230822.0943",
+      "description" : "Logger New table",
+      "type" : "SQL",
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\migrations\\V20230822_0943__Logger New table.sql",
+      "executionTime" : 9
+    } ],
+    "migrationsExecuted" : 1,
+    "success" : true,
+    "flywayVersion" : "9.21.1",
+    "database" : "FWSimpleTalk_3_QA",
+    "warnings" : [ "outOfOrder mode is active. Migration of schema [dbo] may not be reproducible." ],
+    "databaseType" : null,
+    "totalMigrationTime" : 9
+  }, {
+    "timestamp" : "2025-02-26T13:38:08.3253499",
+    "operation" : "code",
+    "exception" : "Flyway SqlFluff code analysis requires Python 3, pip and SqlFluff version 1.2.1 or greater, preferably version 3.0.7\r\nRun 'pip install sqlfluff==3.0.7' to install SqlFluff if you would like to access this function",
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:38:48.9560153",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:43:04.3411446",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0964__DROP TABLE Grant CREATE PROCEDURE Howards.sql\r\nCodes: RX001(Line 7)",
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:44:19.5594233",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0965__TRUNCATE TABLE SizeTest.sql\r\nCodes: RX003(Line 1)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0964__DROP TABLE Grant CREATE PROCEDURE Howards.sql\r\nCodes: RX001(Line 7)",
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:45:48.2517749",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0965__TRUNCATE TABLE SizeTest.sql\r\nCodes: RX003(Line 1)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0964__DROP TABLE Grant CREATE PROCEDURE Howards.sql\r\nCodes: RX001(Line 7)",
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:46:53.4616105",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:48:28.0425852",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:52:03.7037893",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:52:51.1219058",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:54:09.4384783",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T13:56:31.4102065",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql\r\nCodes: RX003(Line 3)",
+    "licenseFailed" : false,
+    "results" : [ {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "TRUNCATE statement",
+        "code" : "RX003"
+      } ]
+    } ]
+  } ]
 }
