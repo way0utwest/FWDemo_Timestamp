@@ -798,7 +798,8 @@ padding-left: 40px;
 <option value="2025-02-26 13:52:03">2025-02-26 13:52:03</option>
 <option value="2025-02-26 13:52:51">2025-02-26 13:52:51</option>
 <option value="2025-02-26 13:54:09">2025-02-26 13:54:09</option>
-<option value="2025-02-26 13:56:31" selected="true">2025-02-26 13:56:31</option>
+<option value="2025-02-26 13:56:31">2025-02-26 13:56:31</option>
+<option value="2025-02-26 14:47:59" selected="true">2025-02-26 14:47:59</option>
 </select>
 </div>
 <div class="page 2023-08-22 09:39:47">
@@ -2221,22 +2222,16 @@ Codes: RX001(Line 7)</pre>
 <div class="page 2025-02-26 13:56:31">
 <div class="tabs">
 <button class="tab" onclick="onTabClick(event, 'Dashboard_0_2025-02-2613:56:31','dashboard-0_2025-02-26 13:56:31')" id="dashboard-0_2025-02-26 13:56:31"><h4>Dashboard</h4></button>
-<button class="tab" onclick="onTabClick(event, 'CodeAnalysis_1_2025-02-2613:56:31','code-1_2025-02-26 13:56:31')" id="code-1_2025-02-26 13:56:31"><h4>Code Analysis</h4></button>
+<button class="tab" onclick="onTabClick(event, 'Migrationreport_1_2025-02-2613:56:31','code-1_2025-02-26 13:56:31')" id="code-1_2025-02-26 13:56:31"><h4>Migration report</h4></button>
 <button class="tab" onclick="onTabClick(event, 'ChangeReport_2_2025-02-2613:56:31','changes-2_2025-02-26 13:56:31')" id="changes-2_2025-02-26 13:56:31"><h4>Change Report</h4></button>
 <button class="tab" onclick="onTabClick(event, 'DriftReport_3_2025-02-2613:56:31','drift-3_2025-02-26 13:56:31')" id="drift-3_2025-02-26 13:56:31"><h4>Drift Report</h4></button>
 <button class="tab" onclick="onTabClick(event, 'MigrationReport_4_2025-02-2613:56:31','migrate-4_2025-02-26 13:56:31')" id="migrate-4_2025-02-26 13:56:31"><h4>Migration Report</h4></button>
 <button class="tab" onclick="onTabClick(event, 'DryRunReport_5_2025-02-2613:56:31','dryrun-5_2025-02-26 13:56:31')" id="dryrun-5_2025-02-26 13:56:31"><h4>Dry Run Report</h4></button>
 </div><div id="Dashboard_0_2025-02-2613:56:31" class="tabcontent">
-<div class='dashboardContainer'><div class='dashboardSummaryGroup'><h5>Code Analysis</h5><div class='summaryDiv scError'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#warningFilled"/></svg></span><span class='summaryText'>1 violation</span></div></div><button class='clickable inspectButton fancyButton' onclick="onTabClick(event, 'CodeAnalysis_1_2025-02-2613:56:31','code-1_2025-02-26 13:56:31')">Inspect Code Analysis</button></div></div></div>
-<div id="CodeAnalysis_1_2025-02-2613:56:31" class="tabcontent">
-<div class='summaryHeader'><div class='summaryDiv scError'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#warningFilled"/></svg></span><span class='summaryText'>1 violation</span></div></div></div><details open>
-<summary><h4>E:\Documents\git\FlywaySimpleTalk_Timestamp\.\migrations\V202300822_0971__RX003 Truncate in proc test.sql</h4></summary>
-<ul>
-<li style="margin-bottom: 25px">
-Line 3, Column 1 - RX003 : TRUNCATE statement
-</li>
-</ul>
-</details>
+<div class='dashboardContainer'><div class='dashboardSummaryGroup'><h5>Migration report</h5><div class='summaryDiv scError'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#infoOutlined"/></svg></span><span class='summaryText'>Database version: 0</span></div></div><div class='summaryDiv scWarn'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#checkFilled"/></svg></span><span class='summaryText'>0 scripts migrated</span></div></div><div class='summaryDiv scNote'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#clockOutlined"/></svg></span><span class='summaryText'>Execution Time: 00:00.000s</span></div></div><button class='clickable inspectButton fancyButton' onclick="onTabClick(event, 'Migrationreport_1_2025-02-2613:56:31','code-1_2025-02-26 13:56:31')">Inspect Migration report</button></div></div></div>
+<div id="Migrationreport_1_2025-02-2613:56:31" class="tabcontent">
+<div class='summaryHeader'><div class='summaryDiv scError'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#infoOutlined"/></svg></span><span class='summaryText'>Database version: 0</span></div></div><div class='summaryDiv scWarn'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#checkFilled"/></svg></span><span class='summaryText'>0 scripts migrated</span></div></div><div class='summaryDiv scNote'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#clockOutlined"/></svg></span><span class='summaryText'>Execution Time: 00:00.000s</span></div></div></div><div>  <h3>No migrations found</h3>
+</div>
 <div class="error">
 <pre class="exception">Flyway Exception: Code Analysis major tolerance exceeded:
 Filepath: E:\Documents\git\FlywaySimpleTalk_Timestamp\.\migrations\V202300822_0971__RX003 Truncate in proc test.sql
@@ -2302,6 +2297,109 @@ Codes: RX003(Line 3)</pre>
 </div>
 </div>
 <div id="DryRunReport_5_2025-02-2613:56:31" class="tabcontent">
+<div class="holdingTab">
+    <div class='summaryDiv summaryNote'>
+        <div class='summaryDivContent'>
+            <span class='summaryIcon'><svg fill="none"><use href="#infoOutlined"/></svg></span>
+            <span class='summaryText'>Explore how to get this report and what it can do for you.</span></div>
+        <div class="summaryRight" ><a href='https://rd.gt/3KSXkAW'>Learn More</a></div>
+    </div>
+
+    <div class="upgradeContent">
+        <svg fill="none" width="38" height="38">
+            <use href="#document"/>
+        </svg>
+
+        <p>No Dry Run report available yet</p>
+        <button class="clickable learnMoreGrayButton fancyButton" onclick="location.href='https://rd.gt/3KSXkAW'">Learn more</button>
+    </div>
+</div>
+</div>
+</div>
+<div class="page 2025-02-26 14:47:59">
+<div class="tabs">
+<button class="tab" onclick="onTabClick(event, 'Dashboard_0_2025-02-2614:47:59','dashboard-0_2025-02-26 14:47:59')" id="dashboard-0_2025-02-26 14:47:59"><h4>Dashboard</h4></button>
+<button class="tab" onclick="onTabClick(event, 'CodeAnalysis_1_2025-02-2614:47:59','code-1_2025-02-26 14:47:59')" id="code-1_2025-02-26 14:47:59"><h4>Code Analysis</h4></button>
+<button class="tab" onclick="onTabClick(event, 'ChangeReport_2_2025-02-2614:47:59','changes-2_2025-02-26 14:47:59')" id="changes-2_2025-02-26 14:47:59"><h4>Change Report</h4></button>
+<button class="tab" onclick="onTabClick(event, 'DriftReport_3_2025-02-2614:47:59','drift-3_2025-02-26 14:47:59')" id="drift-3_2025-02-26 14:47:59"><h4>Drift Report</h4></button>
+<button class="tab" onclick="onTabClick(event, 'MigrationReport_4_2025-02-2614:47:59','migrate-4_2025-02-26 14:47:59')" id="migrate-4_2025-02-26 14:47:59"><h4>Migration Report</h4></button>
+<button class="tab" onclick="onTabClick(event, 'DryRunReport_5_2025-02-2614:47:59','dryrun-5_2025-02-26 14:47:59')" id="dryrun-5_2025-02-26 14:47:59"><h4>Dry Run Report</h4></button>
+</div><div id="Dashboard_0_2025-02-2614:47:59" class="tabcontent">
+<div class='dashboardContainer'><div class='dashboardSummaryGroup'><h5>Code Analysis</h5><div class='summaryDiv scError'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#warningFilled"/></svg></span><span class='summaryText'>1 violation</span></div></div><button class='clickable inspectButton fancyButton' onclick="onTabClick(event, 'CodeAnalysis_1_2025-02-2614:47:59','code-1_2025-02-26 14:47:59')">Inspect Code Analysis</button></div></div></div>
+<div id="CodeAnalysis_1_2025-02-2614:47:59" class="tabcontent">
+<div class='summaryHeader'><div class='summaryDiv scError'><div class='summaryDivContent'><span class='summaryIcon'><svg fill="none"><use href="#warningFilled"/></svg></span><span class='summaryText'>1 violation</span></div></div></div><details open>
+<summary><h4>E:\Documents\git\FlywaySimpleTalk_Timestamp\.\migrations\V202300822_0971__RX003 Truncate in proc test.sql</h4></summary>
+<ul>
+<li style="margin-bottom: 25px">
+Line 3, Column 1 - RX003 : TRUNCATE statement
+</li>
+</ul>
+</details>
+<div class="error">
+<pre class="exception">Flyway Exception: Code Analysis major tolerance exceeded:
+Filepath: E:\Documents\git\FlywaySimpleTalk_Timestamp\.\migrations\V202300822_0971__RX003 Truncate in proc test.sql
+Codes: RX003(Line 3)</pre>
+</div>
+</div>
+<div id="ChangeReport_2_2025-02-2614:47:59" class="tabcontent">
+<div class="holdingTab">
+    <div class='summaryDiv summaryNote'>
+        <div class='summaryDivContent'>
+            <span class='summaryIcon'><svg fill="none"><use href="#infoOutlined"/></svg></span>
+            <span class='summaryText'>Explore how to get this report and what it can do for you.</span></div>
+        <div class="summaryRight" ><a href='https://rd.gt/43G0r7G'>Learn More</a></div>
+    </div>
+
+    <div class="upgradeContent">
+        <svg fill="none" width="38" height="38">
+            <use href="#document"/>
+        </svg>
+
+        <p>No change report available yet</p>
+        <button class="clickable learnMoreGrayButton fancyButton" onclick="location.href='https://rd.gt/43G0r7G'">Learn more</button>
+    </div>
+</div>
+</div>
+<div id="DriftReport_3_2025-02-2614:47:59" class="tabcontent">
+<div class="holdingTab">
+    <div class='summaryDiv summaryNote'>
+        <div class='summaryDivContent'>
+            <span class='summaryIcon'><svg fill="none"><use href="#infoOutlined"/></svg></span>
+            <span class='summaryText'>Explore how to get this report and what it can do for you.</span></div>
+        <div class="summaryRight" ><a href='https://rd.gt/40ikqXf'>Learn More</a></div>
+    </div>
+
+    <div class="upgradeContent">
+        <svg fill="none" width="38" height="38">
+            <use href="#document"/>
+        </svg>
+
+        <p>No drift report available yet</p>
+
+        <button class="clickable learnMoreGrayButton fancyButton" onclick="location.href='https://rd.gt/40ikqXf'">Learn more</button>
+    </div>
+</div>
+</div>
+<div id="MigrationReport_4_2025-02-2614:47:59" class="tabcontent">
+<div class="holdingTab">
+    <div class='summaryDiv summaryNote'>
+        <div class='summaryDivContent'>
+            <span class='summaryIcon'><svg fill="none"><use href="#infoOutlined"/></svg></span>
+            <span class='summaryText'>Explore how to get this report and what it can do for you.</span></div>
+        <div class="summaryRight" ><a href='https://rd.gt/3okl9tM'>Learn More</a></div>
+    </div>
+
+    <div class="upgradeContent">
+        <svg fill="none" width="38" height="38">
+            <use href="#document"/>
+        </svg>
+
+        <p>No migrate available yet</p>
+        <button class="clickable learnMoreGrayButton fancyButton" onclick="location.href='https://rd.gt/3okl9tM'">Learn more</button>
+    </div>
+</div>
+</div>
+<div id="DryRunReport_5_2025-02-2614:47:59" class="tabcontent">
 <div class="holdingTab">
     <div class='summaryDiv summaryNote'>
         <div class='summaryDivContent'>

@@ -420,6 +420,22 @@
     "operation" : "code",
     "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql\r\nCodes: RX003(Line 3)",
     "licenseFailed" : false,
+    "initialSchemaVersion" : null,
+    "targetSchemaVersion" : null,
+    "schemaName" : null,
+    "migrations" : [ ],
+    "migrationsExecuted" : 0,
+    "success" : false,
+    "flywayVersion" : null,
+    "database" : null,
+    "warnings" : [ ],
+    "databaseType" : null,
+    "totalMigrationTime" : 0
+  }, {
+    "timestamp" : "2025-02-26T14:47:59.69568",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql\r\nCodes: RX003(Line 3)",
+    "licenseFailed" : false,
     "results" : [ {
       "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql",
       "violations" : [ {
