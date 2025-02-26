@@ -11,6 +11,6 @@ BEGIN
   UPDATE dbo.Customer
    SET CustomerName = @c
    WHERE CustomerID = @CustomerID
-
+   SELECT @@ROWCOUNT AS CustomersUpdated
 END
 GO

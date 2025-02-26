@@ -5,6 +5,8 @@ CREATE TABLE [dbo].[FreightRate]
 [size] [numeric] (10, 4) NULL,
 [rate] [money] NULL,
 [active] [bit] NULL,
-[status] [tinyint] NULL
+[statustext] [tinyint] NULL,
+[validUntil] [datetime2] (3) NULL,
+[NegotiatedRate] [tinyint] NULL
 )
 GO
