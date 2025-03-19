@@ -1,5 +1,5 @@
 create procedure GetiSizes
 as 
-select * from dbo.SizeTest
+select customer name, * from dbo.SizeTest INNER JOIN customer ON sizetest.a = customer.b
 return
 go

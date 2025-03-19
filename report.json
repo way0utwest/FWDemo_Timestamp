@@ -260,179 +260,468 @@
     "operation" : "code",
     "exception" : "Flyway SqlFluff code analysis requires Python 3, pip and SqlFluff version 1.2.1 or greater, preferably version 3.0.7\r\nRun 'pip install sqlfluff==3.0.7' to install SqlFluff if you would like to access this function",
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:38:48.9560153",
     "operation" : "code",
     "exception" : null,
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:43:04.3411446",
     "operation" : "code",
     "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0964__DROP TABLE Grant CREATE PROCEDURE Howards.sql\r\nCodes: RX001(Line 7)",
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:44:19.5594233",
     "operation" : "code",
     "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0965__TRUNCATE TABLE SizeTest.sql\r\nCodes: RX003(Line 1)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0964__DROP TABLE Grant CREATE PROCEDURE Howards.sql\r\nCodes: RX001(Line 7)",
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:45:48.2517749",
     "operation" : "code",
     "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0965__TRUNCATE TABLE SizeTest.sql\r\nCodes: RX003(Line 1)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0964__DROP TABLE Grant CREATE PROCEDURE Howards.sql\r\nCodes: RX001(Line 7)",
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:46:53.4616105",
     "operation" : "code",
     "exception" : null,
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:48:28.0425852",
     "operation" : "code",
     "exception" : null,
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:52:03.7037893",
     "operation" : "code",
     "exception" : null,
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:52:51.1219058",
     "operation" : "code",
     "exception" : null,
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:54:09.4384783",
     "operation" : "code",
     "exception" : null,
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T13:56:31.4102065",
     "operation" : "code",
     "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql\r\nCodes: RX003(Line 3)",
     "licenseFailed" : false,
-    "initialSchemaVersion" : null,
-    "targetSchemaVersion" : null,
-    "schemaName" : null,
-    "migrations" : [ ],
-    "migrationsExecuted" : 0,
-    "success" : false,
-    "flywayVersion" : null,
-    "database" : null,
-    "warnings" : [ ],
-    "databaseType" : null,
-    "totalMigrationTime" : 0
+    "results" : [ ]
   }, {
     "timestamp" : "2025-02-26T14:47:59.69568",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql\r\nCodes: RX003(Line 3)",
+    "licenseFailed" : false,
+    "results" : [ ]
+  }, {
+    "timestamp" : "2025-02-26T14:48:28.1461948",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql\r\nCodes: RX003(Line 3)",
+    "licenseFailed" : false,
+    "results" : [ ]
+  }, {
+    "timestamp" : "2025-02-26T14:52:29.4073077",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "results" : [ ]
+  }, {
+    "timestamp" : "2025-02-27T14:10:21.6032336",
+    "operation" : "code",
+    "exception" : "Flyway SqlFluff code analysis requires Python 3, pip and SqlFluff version 1.2.1 or greater, preferably version 3.0.7\r\nRun 'pip install sqlfluff==3.0.7' to install SqlFluff if you would like to access this function",
+    "licenseFailed" : false,
+    "results" : [ ]
+  }, {
+    "timestamp" : "2025-02-27T14:10:56.7049904",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql\r\nCodes: RX703(Line 5)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql\r\nCodes: RX702(Line 3)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql\r\nCodes: RX702(Line 1)",
+    "licenseFailed" : false,
+    "results" : [ ]
+  }, {
+    "timestamp" : "2025-02-27T14:27:54.5889196",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql\r\nCodes: RX703(Line 5)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql\r\nCodes: RX702(Line 1)",
+    "licenseFailed" : false,
+    "results" : [ ]
+  }, {
+    "timestamp" : "2025-02-27T15:09:15.2458861",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql\r\nCodes: RX703(Line 5)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql\r\nCodes: RX702(Line 1)",
+    "licenseFailed" : false,
+    "results" : [ ]
+  }, {
+    "timestamp" : "2025-02-27T15:09:36.4264657",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql\r\nCodes: RX703(Line 5)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql\r\nCodes: RX707(Line 3)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql\r\nCodes: RX702(Line 1), RX707(Line 1)",
+    "licenseFailed" : false,
+    "results" : [ {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "TRUNCATE statement",
+        "code" : "RX003"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql",
+      "violations" : [ {
+        "line_no" : 25,
+        "line_pos" : 2,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql",
+      "violations" : [ {
+        "line_no" : 5,
+        "line_pos" : 7,
+        "description" : "Ensure queries have a WHERE clause to avoid full table scans.",
+        "code" : "RX703"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql",
+      "violations" : [ {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    } ]
+  }, {
+    "timestamp" : "2025-03-06T14:56:59.8691531",
+    "operation" : "code",
+    "exception" : "Flyway SqlFluff code analysis requires Python 3, pip and SqlFluff version 1.2.1 or greater, preferably version 3.0.7\r\nRun 'pip install sqlfluff==3.0.7' to install SqlFluff if you would like to access this function",
+    "licenseFailed" : false,
+    "results" : [ ]
+  }, {
+    "timestamp" : "2025-03-06T14:57:50.2949762",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "results" : [ {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "TRUNCATE statement",
+        "code" : "RX003"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql",
+      "violations" : [ {
+        "line_no" : 25,
+        "line_pos" : 2,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql",
+      "violations" : [ {
+        "line_no" : 5,
+        "line_pos" : 7,
+        "description" : "Ensure queries have a WHERE clause to avoid full table scans.",
+        "code" : "RX703"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql",
+      "violations" : [ {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    } ]
+  }, {
+    "timestamp" : "2025-03-06T14:58:10.5794867",
+    "operation" : "code",
+    "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql\r\nCodes: RX003(Line 3)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql\r\nCodes: RX903(Line 25)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql\r\nCodes: RX703(Line 5), RX903(Line 3)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql\r\nCodes: RX702(Line 1)",
+    "licenseFailed" : false,
+    "results" : [ {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "TRUNCATE statement",
+        "code" : "RX003"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql",
+      "violations" : [ {
+        "line_no" : 25,
+        "line_pos" : 2,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql",
+      "violations" : [ {
+        "line_no" : 5,
+        "line_pos" : 7,
+        "description" : "Ensure queries have a WHERE clause to avoid full table scans.",
+        "code" : "RX703"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql",
+      "violations" : [ {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    } ]
+  }, {
+    "timestamp" : "2025-03-06T15:10:55.1530711",
+    "operation" : "code",
+    "exception" : "Code Analysis minor tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql\r\nCodes: RX003(Line 3)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql\r\nCodes: RX903(Line 25)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql\r\nCodes: RX703(Line 5), RX903(Line 3)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql\r\nCodes: RX702(Line 3)\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql\r\nCodes: RX702(Line 1)",
+    "licenseFailed" : false,
+    "results" : [ {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "TRUNCATE statement",
+        "code" : "RX003"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql",
+      "violations" : [ {
+        "line_no" : 25,
+        "line_pos" : 2,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql",
+      "violations" : [ {
+        "line_no" : 5,
+        "line_pos" : 7,
+        "description" : "Ensure queries have a WHERE clause to avoid full table scans.",
+        "code" : "RX703"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql",
+      "violations" : [ {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    } ]
+  }, {
+    "timestamp" : "2025-03-06T15:11:06.3319912",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "results" : [ {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "TRUNCATE statement",
+        "code" : "RX003"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql",
+      "violations" : [ {
+        "line_no" : 25,
+        "line_pos" : 2,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql",
+      "violations" : [ {
+        "line_no" : 5,
+        "line_pos" : 7,
+        "description" : "Ensure queries have a WHERE clause to avoid full table scans.",
+        "code" : "RX703"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql",
+      "violations" : [ {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    } ]
+  }, {
+    "timestamp" : "2025-03-06T15:11:44.1948746",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "results" : [ {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "TRUNCATE statement",
+        "code" : "RX003"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql",
+      "violations" : [ {
+        "line_no" : 25,
+        "line_pos" : 2,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql",
+      "violations" : [ {
+        "line_no" : 5,
+        "line_pos" : 7,
+        "description" : "Ensure queries have a WHERE clause to avoid full table scans.",
+        "code" : "RX703"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql",
+      "violations" : [ {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    } ]
+  }, {
+    "timestamp" : "2025-03-06T15:14:58.0815836",
     "operation" : "code",
     "exception" : "Code Analysis major tolerance exceeded:\r\nFilepath: E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql\r\nCodes: RX003(Line 3)",
     "licenseFailed" : false,
@@ -443,6 +732,114 @@
         "line_pos" : 1,
         "description" : "TRUNCATE statement",
         "code" : "RX003"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql",
+      "violations" : [ {
+        "line_no" : 25,
+        "line_pos" : 2,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql",
+      "violations" : [ {
+        "line_no" : 5,
+        "line_pos" : 7,
+        "description" : "Ensure queries have a WHERE clause to avoid full table scans.",
+        "code" : "RX703"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql",
+      "violations" : [ {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    } ]
+  }, {
+    "timestamp" : "2025-03-06T15:15:38.2191881",
+    "operation" : "code",
+    "exception" : null,
+    "licenseFailed" : false,
+    "results" : [ {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0971__RX003 Truncate in proc test.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "TRUNCATE statement",
+        "code" : "RX003"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0962__Create Table FreightRates.sql",
+      "violations" : [ {
+        "line_no" : 25,
+        "line_pos" : 2,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0970__RX904 Test 1.sql",
+      "violations" : [ {
+        "line_no" : 5,
+        "line_pos" : 7,
+        "description" : "Ensure queries have a WHERE clause to avoid full table scans.",
+        "code" : "RX703"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Intrinsic function usage on columns in predicate",
+        "code" : "RX903"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0966__RULE 702 Check.sql",
+      "violations" : [ {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 3,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
+      } ]
+    }, {
+      "filepath" : "E:\\Documents\\git\\FlywaySimpleTalk_Timestamp\\.\\migrations\\V202300822_0969__Rule 702 Explicit Test 1.sql",
+      "violations" : [ {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX702"
+      }, {
+        "line_no" : 1,
+        "line_pos" : 1,
+        "description" : "Avoid using SELECT * in queries. Specify the columns you need.",
+        "code" : "RX707"
       } ]
     } ]
   } ]

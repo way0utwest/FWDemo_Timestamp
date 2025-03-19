@@ -10,6 +10,19 @@ schemaModel = "./schema-model"
   [flywayDesktop.generate]
   undoScripts = true
 
+[flyway]
+mixed = true
+outOfOrder = true
+locations = [ "filesystem:migrations" ]
+validateMigrationNaming = true
+defaultSchema = "dbo"
+
+  [flyway.check]
+  rulesLocation = "/rules"
+
+[flyway.plugins.clean]
+mode = "all"
+
 [redgateCompare]
 filterFile = "filter.rgf"
 
@@ -109,13 +122,3 @@ transportClrDataTypesAsBinary = false
   [[redgateCompare.staticDataTables]]
   schema = "dbo"
   table = "STatus"
-
-[flyway]
-mixed = true
-outOfOrder = true
-locations = [ "filesystem:migrations" ]
-validateMigrationNaming = true
-defaultSchema = "dbo"
-
-[flyway.plugins.clean]
-mode = "all"
