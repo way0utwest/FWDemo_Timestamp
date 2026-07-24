@@ -1,33 +1,65 @@
 databaseType = "SqlServer"
-name = "SimpleTalk_TimeStamp"
 id = "6236f05e-38d4-4aba-8ba5-58f69446c15d"
-
-[flywayDesktop]
-developmentEnvironment = "development"
-shadowEnvironment = "shadow"
-schemaModel = "./schema-model"
-
-  [flywayDesktop.generate]
-  undoScripts = true
+name = "SimpleTalk_TimeStamp"
 
 [flyway]
+callbackLocations = [ "filesystem:callbacks" ]
+defaultSchema = "dbo"
+errorOverrides = [ "S0001:0:I-" ]
+locations = [ "filesystem:migrations" ]
 mixed = true
 outOfOrder = true
-locations = [ "filesystem:migrations" ]
+schemaModelLocation = "schema-model"
 validateMigrationNaming = true
-defaultSchema = "dbo"
 
   [flyway.check]
   rulesLocation = "/rules"
 
-[flyway.plugins.clean]
+[flyway.sqlserver.clean]
 mode = "all"
+
+[flywayDesktop]
+developmentEnvironment = "development"
+schemaModel = "./schema-model"
+shadowEnvironment = "shadow"
+showDeploymentDecision = false
+enableMigrations = true
+
+  [flywayDesktop.generate]
+  undoScripts = true
 
 [redgateCompare]
 filterFile = "filter.rgf"
 
+  [[redgateCompare.staticDataTables]]
+  schema = "dbo"
+  table = "STatus"
+
   [redgateCompare.sqlserver]
   filterFile = "Filter.scpf"
+
+[redgateCompare.sqlserver.data.options.comparison]
+compressTemporaryFiles = false
+forceBinaryCollation = true
+treatEmptyStringAsNull = false
+trimTrailingWhiteSpace = false
+useChecksumComparison = false
+useMaxPrecisionForFloatComparison = false
+
+[redgateCompare.sqlserver.data.options.deployment]
+disableDdlTriggers = true
+disableDmlTriggers = false
+disableForeignKeys = false
+dontIncludeCommentsInScript = false
+dropPrimaryKeysIndexesAndUniqueConstraints = false
+reseedIdentityColumns = false
+skipIntegrityChecksForForeignKeys = false
+transportClrDataTypesAsBinary = false
+useExistenceChecks = false
+
+[redgateCompare.sqlserver.data.options.mapping]
+includeTimestampColumns = false
+useCaseSensitiveObjectDefinition = true
 
 [redgateCompare.sqlserver.options.behavior]
 addCreateOrAlterForRerunnableScripts = false
@@ -96,29 +128,3 @@ ignoreWhiteSpace = true
 ignoreWithElementOrder = true
 ignoreWithEncryption = false
 ignoreWithNoCheck = true
-
-[redgateCompare.sqlserver.data.options.mapping]
-includeTimestampColumns = false
-useCaseSensitiveObjectDefinition = true
-
-[redgateCompare.sqlserver.data.options.comparison]
-compressTemporaryFiles = false
-forceBinaryCollation = true
-treatEmptyStringAsNull = false
-trimTrailingWhiteSpace = false
-useChecksumComparison = false
-useMaxPrecisionForFloatComparison = false
-
-[redgateCompare.sqlserver.data.options.deployment]
-disableDdlTriggers = true
-disableDmlTriggers = false
-disableForeignKeys = false
-dontIncludeCommentsInScript = false
-dropPrimaryKeysIndexesAndUniqueConstraints = false
-reseedIdentityColumns = false
-skipIntegrityChecksForForeignKeys = false
-transportClrDataTypesAsBinary = false
-
-  [[redgateCompare.staticDataTables]]
-  schema = "dbo"
-  table = "STatus"
