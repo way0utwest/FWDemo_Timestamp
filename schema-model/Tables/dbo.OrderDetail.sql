@@ -6,6 +6,7 @@ CREATE TABLE [dbo].[OrderDetail]
 [LineNotes] [varchar] (200) NULL,
 [UnitPrice] [money] NULL,
 [quantity] [int] NULL,
-[LineTotal] [numeric] (10, 2) NULL
+[LineTotal] [numeric] (10, 2) NULL,
+[discountpercent] [money] NULL
 )
 GO
