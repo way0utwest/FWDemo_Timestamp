@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "flyway": {
+      "type": "stdio",
+      "command": "C:\\Utilities\\flyway13.0.0\\flyway.cmd",
+      "args": ["mcp", "-mcp.toolsets=all"]
+    }
+  }
+}
