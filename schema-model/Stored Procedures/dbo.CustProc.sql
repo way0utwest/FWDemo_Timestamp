@@ -5,12 +5,11 @@ GO
 CREATE PROCEDURE [dbo].[CustProc]
 /*
 2026-07-01 - removed * with explicit columns
+2026-07-01 - removed unneeded columns
 */
 AS
 SELECT CustomerID,
        CustomerName,
-       PrimaryContact,
-       PrimaryAddress,
-       PurchaseLimit,
+       PrimaryContact
        Status FROM customer
 GO
